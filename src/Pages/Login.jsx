@@ -27,7 +27,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       // eslint-disable-next-line no-unused-vars
-      const res = await axios.post(`${API_URL}/api/auth/l`, data , {
+      const res = await axios.post(`https://backendft-production-9ad8.up.railway.app/api/auth/l`, data , {
         withCredentials: true,
       });
       toast.success( res.data.message || "Login successful!");
