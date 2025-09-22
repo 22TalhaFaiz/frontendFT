@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
-import API_URL from  '../config.js'
+import API_URL from  '../../config.js'
 
 // Zod Schema
 const exerciseSchema = z.object({

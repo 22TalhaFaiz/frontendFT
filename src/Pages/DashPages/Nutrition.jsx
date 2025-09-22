@@ -1,6 +1,6 @@
 import { Clipboard, Search, Utensils, TrendingUp, Calendar, Target, Sparkles, X } from "lucide-react";
 import React, { useState, useEffect } from "react";
-import API_URL from  '../config.js'
+import API_URL from  '../../config.js'
 
 const Nutrition = () => {
   const [formData, setFormData] = useState({

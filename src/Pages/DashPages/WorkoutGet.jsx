@@ -18,8 +18,7 @@ import {
 } from 'lucide-react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import API_URL from  '../config.js'
-
+import API_URL from  '../../config.js'
 
 
 const GetWorkouts = () => {

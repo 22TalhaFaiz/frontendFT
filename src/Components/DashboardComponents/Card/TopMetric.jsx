@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MetricCard from "./MetricCard";
 import axios from "axios";
-import API_URL from  '../config.js'
+import API_URL from  '../../../config.js'
 
 const TopMetrics = () => {
   const [metrics, setMetrics] = useState({

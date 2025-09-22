@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
-import API_URL from  '../config.js'
+import API_URL from  '../../../config.js'
 
 const WelcomeCard = () => {
   const [userName, setUserName] = useState("");

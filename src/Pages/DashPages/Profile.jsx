@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { User, Edit3, Save, X, Camera, Activity, Scale, Ruler, Calendar, Shield } from 'lucide-react';
-import API_URL from  '../config.js'
+import API_URL from  '../../config.js'
 
 // Zod validation schema
 const profileSchema = z.object({
