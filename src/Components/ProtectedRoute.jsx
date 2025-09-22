@@ -8,7 +8,7 @@ const [authorized , setAuthorized] = useState(null);
 const [loading , setLoading] = useState(true);
 
 useEffect(() => {
-    axios.get("http://localhost:3008/api/auth/dashboard",{
+    axios.get(`${API_URL}/api/auth/dashboard`,{
         withCredentials: true,
     }).then (() => {
         setAuthorized(true);
