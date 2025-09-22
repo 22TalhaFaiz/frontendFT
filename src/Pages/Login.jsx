@@ -25,21 +25,23 @@ const Login = () => {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = async (data) => {
-    try {
-      // eslint-disable-next-line no-unused-vars
-      const res = await axios.post(`https://backendft-production-9ad8.up.railway.app/api/auth/l`, data , {
-        withCredentials: true,
-      });
-      toast.success( res.data.message || "Login successful!");
-      reset();
-      navigate("/dashboard");
-    
-    } catch (err) {
-      toast.error(err.response?.data?.message || "Login failed!");
-    }
-  };
+ const onSubmit = async (data) => {
+  try {
+    const res = await axios.post(
+      "https://backendft-production-9ad8.up.railway.app/api/auth/l",
+      data
+    );
 
+    // Save JWT token to localStorage
+    localStorage.setItem("token", res.data.token);
+
+    toast.success(res.data.message || "Login successful!");
+    reset();
+    navigate("/dashboard");
+  } catch (err) {
+    toast.error(err.response?.data?.message || "Login failed!");
+  }
+};
   return (
     <div className="relative min-h-screen flex items-center justify-center px-4">
       {/* Background */}

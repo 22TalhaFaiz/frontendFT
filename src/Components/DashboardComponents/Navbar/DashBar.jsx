@@ -9,16 +9,13 @@ const DashboardNavbar = () => {
   const dropdownRef = useRef();
 
   const handleLogout = async () => {
-    try {
-      await fetch(`${API_URL}api/auth/logout`, {
-        method: "POST",
-        credentials: "include",
-      });
-      localStorage.clear();
-      navigate("/");
-    } catch (error) {
-      console.error("Logout Error", error);
-    }
+  localStorage.removeItem("token");
+  
+  // Optionally, clear other stored data
+    localStorage.clear();
+
+  // Redirect to login page
+  navigate("/l");
   };
 
   useEffect(() => {
