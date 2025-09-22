@@ -9,7 +9,7 @@ const [authorized , setAuthorized] = useState(null);
 const [loading , setLoading] = useState(true);
 
 useEffect(() => {
-    axios.get(`${API_URL}/api/auth/dashboard`,{
+    axios.get(`https://backendft-production-9ad8.up.railway.app/api/auth/dashboard`,{
         withCredentials: true,
     }).then (() => {
         setAuthorized(true);
