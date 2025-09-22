@@ -8,7 +8,7 @@ const MetricCard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3008/api/analytics/frequency", { withCredentials: true })
+      .get(`${API_URL}/api/analytics/frequency`, { withCredentials: true })
       .then(res => {
         // Assuming backend sends: { week: 12, month: 45, total: 178 }
         setMetrics(res.data);
