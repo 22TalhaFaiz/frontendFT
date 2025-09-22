@@ -12,7 +12,7 @@ const TopMetrics = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3008/api/metrics", { withCredentials: true })
+      .get(`${API_URL}/api/metrics`, { withCredentials: true })
       .then((res) => {
         setMetrics(res.data);
       })

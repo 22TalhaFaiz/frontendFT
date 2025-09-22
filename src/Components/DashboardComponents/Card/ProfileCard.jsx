@@ -20,7 +20,7 @@ const UserProfileCard = ({ user = {} }) => {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await fetch('http://localhost:3008/api/profile', {
+        const response = await fetch(`${API_URL}/api/profile`, {
           credentials: 'include'
         });
 

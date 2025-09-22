@@ -113,7 +113,7 @@ const updateProfile = async (data) => {
 const updatePassword = async (data) => {
   setUpdating(true);
   try {
-    const response = await fetch('http://localhost:3008/api/profile/password', {
+    const response = await fetch(`${API_URL}/api/profile/password`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',

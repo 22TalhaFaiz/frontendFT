@@ -10,7 +10,7 @@ const DashboardNavbar = () => {
 
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:3008/api/auth/logout", {
+      await fetch(`${API_URL}api/auth/logout`, {
         method: "POST",
         credentials: "include",
       });

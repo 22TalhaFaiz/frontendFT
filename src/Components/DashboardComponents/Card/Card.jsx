@@ -8,7 +8,7 @@ const WelcomeCard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3008/api/auth/me", { withCredentials: true })
+      .get(`${API_URL}api/auth/me`, { withCredentials: true })
       .then((res) => {
         setUserName(res.data?.user?.name || "");
       })

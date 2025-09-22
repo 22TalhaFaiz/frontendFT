@@ -122,7 +122,7 @@ const GetWorkouts = () => {
     if (!window.confirm('Are you sure you want to delete this workout?')) return;
 
     try {
-      await axios.delete(`http://localhost:3008/api/workouts/${id}`, { withCredentials: true });
+      await axios.delete(`${API_URL}/api/workouts/${id}`, { withCredentials: true });
       setWorkouts(prev => prev.filter(w => w._id !== id));
       toast.success('✅ Workout deleted successfully', { 
         theme: 'dark',
