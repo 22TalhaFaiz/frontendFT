@@ -4,7 +4,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, Responsi
 import { Loader2, TrendingUp, Activity, Target, User } from 'lucide-react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import API_URL from  '../config.js'
+import API_URL from  '../../../config.js'
 
 const ProgressCharts = () => {
   const [progressData, setProgressData] = useState([]);

@@ -5,7 +5,7 @@ import {
 } from 'recharts';
 import { motion } from "framer-motion";
 import { FaDumbbell, FaSpinner } from 'react-icons/fa';
-import API_URL from  '../config.js'
+import API_URL from  '../../../config.js'
 
 const WorkoutChart = () => {
   const [data, setData] = useState([]);

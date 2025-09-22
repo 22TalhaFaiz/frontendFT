@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import API_URL from  '../../../config.js'
 
 const RecentWorkouts = () => {
   const [workouts, setWorkouts] = useState([]);
