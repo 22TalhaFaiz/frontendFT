@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaUserEdit, FaUser, FaWeight, FaRuler, FaTint, FaStar, FaTrophy, FaFire } from "react-icons/fa";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import API_URL from  '../config.js'
 
 const UserProfileCard = ({ user = {} }) => {
   const [profileData, setProfileData] = useState({

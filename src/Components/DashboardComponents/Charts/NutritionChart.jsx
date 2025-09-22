@@ -4,6 +4,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
 import { FaAppleAlt, FaSpinner } from 'react-icons/fa';
+import API_URL from  '../config.js'
 
 const NutritionChart = () => {
   const [data, setData] = useState([]);

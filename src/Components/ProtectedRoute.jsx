@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Navigate } from 'react-router-dom';
+import API_URL from  '../config.js'
 
 
 const ProtectedRoute = ({children}) => {

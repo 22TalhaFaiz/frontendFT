@@ -6,6 +6,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link, useNavigate } from "react-router-dom";
+import API_URL from  '../config.js'
 
 const schema = z.object({
   email: z.string().min(1, "Email is required").email("Invalid email"),
@@ -27,7 +28,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       // eslint-disable-next-line no-unused-vars
-      const res = await axios.post(`https://backendft-production-9ad8.up.railway.app/api/auth/l`, data , {
+      const res = await axios.post(`${API_URL}}/api/auth/l`, data , {
         withCredentials: true,
       });
       toast.success( res.data.message || "Login successful!");

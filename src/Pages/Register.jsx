@@ -6,6 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { z } from "zod";
 import { useNavigate } from "react-router-dom";
+import API_URL from  '../config.js'
 
 const schema = z.object({
   name: z.string().min(3, "Name must be at least 3 characters"),

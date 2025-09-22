@@ -6,6 +6,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Loader2, TrendingUp, Calendar, Scale, Ruler, Target, Sparkles, User, Activity, Zap } from 'lucide-react';
+import API_URL from  '../config.js'
 
 // Zod Schema for validation
 const progressSchema = z.object({
